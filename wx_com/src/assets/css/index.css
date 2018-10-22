@@ -1,0 +1,126 @@
+/* 
+  :'######:::'######:::'######::
+  '##... ##:'##... ##:'##... ##:
+   ##:::..:: ##:::..:: ##:::..::
+   ##:::::::. ######::. ######::
+   ##::::::::..... ##::..... ##:
+   ##::: ##:'##::: ##:'##::: ##:
+  . ######::. ######::. ######::
+  :......::::......::::......:::
+   */
+
+[v-cloak] {
+  display: none
+}
+
+body {
+  font-family: "MicroSoft YaHei";
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mgt5 {
+  margin-top: 0.5rem;
+}
+
+.router-block {
+  height: 100%;
+  background-color: #fff;
+}
+
+.cell-li .mint-cell-text {
+  margin-left: 1.5rem;
+}
+
+
+.cell-li .mint-cell-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.page-content {
+  padding-top: 4rem;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.nomore-data {
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: #b9acac;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+
+}
+
+.page-infinite-loading>span>.mint-spinner-fading-circle {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.msg-child {
+  height: 5rem;
+  overflow: hidden;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-top: 1rem;
+  padding-left: 5.5rem;
+  padding-right: 0.5rem;
+  position: relative;
+}
+
+
+.err-info-page img {
+  width: 80%;
+}
+
+.err-info-page {
+  text-align: center;
+  padding: 2rem;
+  padding-top: 6rem;
+}
+
+.time-icon {
+  margin: 0 0.3rem 0 0;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.time-icon+span {
+  /* margin-top: -0.4rem;
+     */
+  position: relative;
+  top: -0.2rem;
+}
+
+.ask-time {
+  font-size: 1.2rem;
+}

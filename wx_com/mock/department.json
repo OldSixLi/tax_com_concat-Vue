@@ -1,0 +1,312 @@
+{
+    "errcode": 0,
+    "errmsg": "ok",
+    "department": [
+        {
+            "id": 1,
+            "name": "天津神州浩天科技有限公司",
+            "parentid": 0,
+            "order": 2147483447
+        },
+        {
+            "id": 52,
+            "name": "模型部",
+            "parentid": 50,
+            "order": 2147483247
+        },
+        {
+            "id": 44,
+            "name": "税务事业部",
+            "parentid": 1,
+            "order": 2147483047
+        },
+        {
+            "id": 67,
+            "name": "销售公共",
+            "parentid": 63,
+            "order": 2147482847
+        },
+        {
+            "id": 45,
+            "name": "税务研发部",
+            "parentid": 44,
+            "order": 2147483447
+        },
+        {
+            "id": 65,
+            "name": "销售二组",
+            "parentid": 63,
+            "order": 2147483247
+        },
+        {
+            "id": 85,
+            "name": "静海组",
+            "parentid": 82,
+            "order": 2147483047
+        },
+        {
+            "id": 84,
+            "name": "公共组",
+            "parentid": 82,
+            "order": 2147483247
+        },
+        {
+            "id": 91,
+            "name": "销售公共",
+            "parentid": 90,
+            "order": 2147483447
+        },
+        {
+            "id": 87,
+            "name": "园区组",
+            "parentid": 82,
+            "order": 2147482647
+        },
+        {
+            "id": 54,
+            "name": "综合部",
+            "parentid": 50,
+            "order": 2147482847
+        },
+        {
+            "id": 63,
+            "name": "高校销售部",
+            "parentid": 34,
+            "order": 2147483247
+        },
+        {
+            "id": 49,
+            "name": "公司",
+            "parentid": 45,
+            "order": 2147482847
+        },
+        {
+            "id": 104,
+            "name": "12366",
+            "parentid": 102,
+            "order": 2147483247
+        },
+        {
+            "id": 82,
+            "name": "税务技服部",
+            "parentid": 44,
+            "order": 2147483047
+        },
+        {
+            "id": 102,
+            "name": "客户联络中心",
+            "parentid": 44,
+            "order": 2147482447
+        },
+        {
+            "id": 101,
+            "name": "记账2组",
+            "parentid": 99,
+            "order": 2147483247
+        },
+        {
+            "id": 64,
+            "name": "销售一组",
+            "parentid": 63,
+            "order": 2147483447
+        },
+        {
+            "id": 51,
+            "name": "行业部",
+            "parentid": 50,
+            "order": 2147483447
+        },
+        {
+            "id": 88,
+            "name": "技术服务组",
+            "parentid": 82,
+            "order": 2147482447
+        },
+        {
+            "id": 53,
+            "name": "市场部",
+            "parentid": 50,
+            "order": 2147483047
+        },
+        {
+            "id": 42,
+            "name": "综合管理部",
+            "parentid": 1,
+            "order": 2147483247
+        },
+        {
+            "id": 69,
+            "name": "行政",
+            "parentid": 42,
+            "order": 2147483047
+        },
+        {
+            "id": 46,
+            "name": "市局",
+            "parentid": 45,
+            "order": 2147483447
+        },
+        {
+            "id": 40,
+            "name": "开发公共",
+            "parentid": 35,
+            "order": 2147482647
+        },
+        {
+            "id": 109,
+            "name": "税务公共",
+            "parentid": 44,
+            "order": 2147482247
+        },
+        {
+            "id": 47,
+            "name": "市局外包项目组",
+            "parentid": 45,
+            "order": 2147483247
+        },
+        {
+            "id": 100,
+            "name": "记账1组",
+            "parentid": 99,
+            "order": 2147483447
+        },
+        {
+            "id": 105,
+            "name": "纳税申报",
+            "parentid": 102,
+            "order": 2147483047
+        },
+        {
+            "id": 106,
+            "name": "票据",
+            "parentid": 102,
+            "order": 2147482847
+        },
+        {
+            "id": 34,
+            "name": "高校事业部",
+            "parentid": 1,
+            "order": 2147483447
+        },
+        {
+            "id": 103,
+            "name": "运维管理",
+            "parentid": 102,
+            "order": 2147483447
+        },
+        {
+            "id": 48,
+            "name": "税务实训项目组",
+            "parentid": 45,
+            "order": 2147483047
+        },
+        {
+            "id": 39,
+            "name": "开发四组",
+            "parentid": 35,
+            "order": 2147482847
+        },
+        {
+            "id": 37,
+            "name": "开发二组",
+            "parentid": 35,
+            "order": 2147483247
+        },
+        {
+            "id": 36,
+            "name": "开发一组",
+            "parentid": 35,
+            "order": 2147483447
+        },
+        {
+            "id": 68,
+            "name": "财务",
+            "parentid": 42,
+            "order": 2147483247
+        },
+        {
+            "id": 38,
+            "name": "开发三组",
+            "parentid": 35,
+            "order": 2147483047
+        },
+        {
+            "id": 35,
+            "name": "高校研发部",
+            "parentid": 34,
+            "order": 2147483447
+        },
+        {
+            "id": 94,
+            "name": "技术工程中心",
+            "parentid": 89,
+            "order": 2147483247
+        },
+        {
+            "id": 86,
+            "name": "武清组",
+            "parentid": 82,
+            "order": 2147482847
+        },
+        {
+            "id": 89,
+            "name": "天孚",
+            "parentid": 44,
+            "order": 2147482847
+        },
+        {
+            "id": 92,
+            "name": "销售二组",
+            "parentid": 90,
+            "order": 2147483247
+        },
+        {
+            "id": 66,
+            "name": "销售三组",
+            "parentid": 63,
+            "order": 2147483047
+        },
+        {
+            "id": 90,
+            "name": "税务销售",
+            "parentid": 89,
+            "order": 2147483447
+        },
+        {
+            "id": 99,
+            "name": "代理记账部",
+            "parentid": 44,
+            "order": 2147482647
+        },
+        {
+            "id": 83,
+            "name": "滨海组",
+            "parentid": 82,
+            "order": 2147483447
+        },
+        {
+            "id": 93,
+            "name": "财税通售后",
+            "parentid": 90,
+            "order": 2147483047
+        },
+        {
+            "id": 70,
+            "name": "总共办",
+            "parentid": 42,
+            "order": 2147482847
+        },
+        {
+            "id": 50,
+            "name": "三维",
+            "parentid": 1,
+            "order": 2147482847
+        },
+        {
+            "id": 43,
+            "name": "人力资源",
+            "parentid": 42,
+            "order": 2147483447
+        }
+    ]
+}

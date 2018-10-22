@@ -1,0 +1,152 @@
+{
+  "success": true,
+  "message": null,
+  "bean": {
+    "qna": {
+      "createUserId": "admin",
+      "surveyUrl": "http://dev.htyfw.com.cn/survey/20180916/141555763",
+      "modifyUserId": "admin",
+      "title": "排序测试",
+      "requiredLogin": "N",
+      "giveFlag": "N",
+      "score": null,
+      "modifyTime": "2018-09-16 14:15:31",
+      "createTime": "2018-06-19 16:11:31",
+      "surveyChannel": "1",
+      "startTime": "2018-09-16 14:15:31",
+      "id": 63,
+      "endTime": null,
+      "state": "2",
+      "introduction": "测试"
+    },
+    "questions": [{
+        "qustion": {
+          "id": 135,
+          "qnaId": 63,
+          "stem": "我是单选类型的问题",
+          "type": "1"
+        },
+        "options": [{
+            "id": 403,
+            "qnaId": 63,
+            "quesId": 135,
+            "content": "单选1",
+            "poll": 0
+          },
+          {
+            "id": 404,
+            "qnaId": 63,
+            "quesId": 135,
+            "content": "单选2",
+            "poll": 0
+          },
+          {
+            "id": 438,
+            "qnaId": 63,
+            "quesId": 135,
+            "content": "单选3",
+            "poll": 0
+          }
+        ]
+      },
+      {
+        "qustion": {
+          "id": 136,
+          "qnaId": 63,
+          "stem": "我是单选和其他类型的问题",
+          "type": "3"
+        },
+        "options": [{
+            "id": 405,
+            "qnaId": 63,
+            "quesId": 136,
+            "content": "我是单选和其他类型的问题1",
+            "poll": 0
+          },
+          {
+            "id": 406,
+            "qnaId": 63,
+            "quesId": 136,
+            "content": "我是单选和其他类型的问题2",
+            "poll": 0
+          },
+          {
+            "id": 439,
+            "qnaId": 63,
+            "quesId": 136,
+            "content": "我是单选和其他类型的问题3",
+            "poll": 0
+          }
+        ]
+      },
+      {
+        "qustion": {
+          "id": 137,
+          "qnaId": 63,
+          "stem": "我是其他类型的问题",
+          "type": "5"
+        }
+      },
+      {
+        "qustion": {
+          "id": 138,
+          "qnaId": 63,
+          "stem": "我是多选和其他类型的问题",
+          "type": "4"
+        },
+        "options": [{
+            "id": 407,
+            "qnaId": 63,
+            "quesId": 138,
+            "content": "我是多选和其他类型的问题1",
+            "poll": 0
+          },
+          {
+            "id": 408,
+            "qnaId": 63,
+            "quesId": 138,
+            "content": "我是多选和其他类型的问题2",
+            "poll": 0
+          },
+          {
+            "id": 440,
+            "qnaId": 63,
+            "quesId": 138,
+            "content": "我是多选和其他类型的问题3",
+            "poll": 0
+          }
+        ]
+      },
+      {
+        "qustion": {
+          "id": 149,
+          "qnaId": 63,
+          "stem": "我是多选类型的问题",
+          "type": "2"
+        },
+        "options": [{
+            "id": 441,
+            "qnaId": 63,
+            "quesId": 149,
+            "content": "我是多选类型的问题1",
+            "poll": 0
+          },
+          {
+            "id": 442,
+            "qnaId": 63,
+            "quesId": 149,
+            "content": "我是多选类型的问题2",
+            "poll": 0
+          },
+          {
+            "id": 443,
+            "qnaId": 63,
+            "quesId": 149,
+            "content": "我是多选类型的问题3",
+            "poll": 0
+          }
+        ]
+      }
+    ]
+  }
+}

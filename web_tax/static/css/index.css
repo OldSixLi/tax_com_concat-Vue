@@ -1,0 +1,592 @@
+/* 
+  :'######:::'######:::'######::
+  '##... ##:'##... ##:'##... ##:
+   ##:::..:: ##:::..:: ##:::..::
+   ##:::::::. ######::. ######::
+   ##::::::::..... ##::..... ##:
+   ##::: ##:'##::: ##:'##::: ##:
+  . ######::. ######::. ######::
+  :......::::......::::......:::
+   */
+
+
+/*
+:'######:::'#######::'##::::'##:'##::::'##::'#######::'##::: ##:
+'##... ##:'##.... ##: ###::'###: ###::'###:'##.... ##: ###:: ##:
+ ##:::..:: ##:::: ##: ####'####: ####'####: ##:::: ##: ####: ##:
+ ##::::::: ##:::: ##: ## ### ##: ## ### ##: ##:::: ##: ## ## ##:
+ ##::::::: ##:::: ##: ##. #: ##: ##. #: ##: ##:::: ##: ##. ####:
+ ##::: ##: ##:::: ##: ##:.:: ##: ##:.:: ##: ##:::: ##: ##:. ###:
+. ######::. #######:: ##:::: ##: ##:::: ##:. #######:: ##::. ##:
+:......::::.......:::..:::::..::..:::::..:::.......:::..::::..::
+*/
+
+body {
+    height: 100%;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.el-table {
+    border: 1px solid #ddd;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+/* 针对table组件的样式变更 */
+
+.el-table td,
+.el-table th {
+    padding: 6px 0;
+}
+
+.el-table::before {
+    height: 0;
+}
+
+tbody>tr:last-child>td {
+    border-bottom: none;
+}
+
+.el-table .cell {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.no-redirect.parent {
+    font-weight: bold;
+}
+
+
+/*
+:::'###:::::'######::'####:'########::'########:
+::'## ##:::'##... ##:. ##:: ##.... ##: ##.....::
+:'##:. ##:: ##:::..::: ##:: ##:::: ##: ##:::::::
+'##:::. ##:. ######::: ##:: ##:::: ##: ######:::
+ #########::..... ##:: ##:: ##:::: ##: ##...::::
+ ##.... ##:'##::: ##:: ##:: ##:::: ##: ##:::::::
+ ##:::: ##:. ######::'####: ########:: ########:
+..:::::..:::......:::....::........:::........::
+*/
+
+.fix-slide {
+    overflow: hidden;
+}
+
+.fix-slide.active {
+    overflow: hidden;
+}
+
+.fix-slide.active i {
+    transform: translateY(0);
+    opacity: 1;
+    width: 100%;
+    line-height: 30px;
+    height: 100%;
+}
+
+.fix-slide .el-col-8 {
+    height: 50px;
+}
+
+.fix-slide .el-col-8 div {
+    line-height: 50px;
+    cursor: pointer;
+}
+
+i.left-top-icon {
+    transform: scale(1.5);
+    margin-top: 17px;
+    margin-left: 5px;
+    color: #fff;
+}
+
+.slideout .fix-slide.active i,
+.fix-slide i {
+    cursor: pointer;
+    transform: translateY(-150%);
+    opacity: 0;
+    transition: all 0.1s ease;
+}
+
+.fix-slide.active .el-col:nth-child(1) i {
+    transition: all 0.2s ease 0;
+}
+
+.fix-slide.active .el-col:nth-child(2) i {
+    transition: all 0.2s ease 0.1s;
+}
+
+.fix-slide.active .el-col:nth-child(3) i {
+    transition: all 0.2s ease 0.2s;
+}
+
+.fix-slide.active .el-col:nth-child(4) i {
+    transition: all 0.2s ease 0.3s ease;
+}
+
+.fix-slide.active .el-col:nth-child(5) i {
+    transition: all 0.2s ease 0.4s;
+}
+
+.fix-slide.active .el-col:nth-child(6) i {
+    transition: all 0.2s ease 0.5s;
+}
+
+.slideout .fix-slide.active {
+    height: 0;
+}
+
+.fix-slide {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    box-sizing: border-box;
+    transition: height .3s ease;
+}
+
+.fix-slide.active {
+    height: 100px;
+}
+
+
+/* 顶部header */
+
+.topbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+    background-color: #006666 !important;
+    color: #9fa4b7;
+}
+
+.topbar-left {
+    position: relative;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    color: #fff;
+    overflow: hidden;
+    transition: width .2s;
+    background-color: #006666;
+}
+
+.company-name {
+    width: 180px;
+    font-weight: bold;
+    line-height: 50px;
+    word-break: keep-all;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+}
+
+.topbar-left.active {
+    width: 240px;
+    transition: width .2s;
+}
+
+
+/* 左侧菜单 */
+
+.slide {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 240px;
+    background-color: #006666;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.el-breadcrumb__item,
+.slide {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ullist>.li {
+    display: block;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 45px;
+    min-height: 44px;
+    font-weight: 500;
+    text-align: left;
+    position: relative;
+}
+
+.slide.slidein .ullist>.li {
+    overflow: hidden;
+}
+
+span.icon {
+    float: left;
+    top: 0;
+    margin-right: 15px;
+}
+
+.slideout .icon {
+    transform: scale(1.3);
+}
+
+.ullist>.li .title-menu {
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    line-height: 45px;
+    overflow: hidden;
+    display: block;
+    height: 45px;
+    padding: 0 15px;
+}
+
+.title-menu+.child-menu {
+    position: relative;
+}
+
+.slide.slideout .caret {
+    display: none;
+}
+
+.title-menu .caret {
+    float: right;
+}
+
+.title-menu .caret>i {
+    transition: all .3s ease;
+}
+
+.title-menu.active .caret>i {
+    transform: rotate(90deg);
+}
+
+.li ul.child-menu.normal {
+    display: none;
+}
+
+.slide.slideout .li:hover {
+    background: #3b3f4f;
+}
+
+.child-menu:hover,
+.child-menu:visited,
+.child-menu:focus-within,
+.child-menu:active,
+.child-menu:focus {
+    display: block;
+}
+
+.slide.slideout .li:hover .child-menu .slide.slideout .li:focus-within .child-menu .slide.slideout .li:active .child-menu .slide.slideout .li:focus .child-menu {
+    display: block;
+}
+
+
+/* 收缩状态下子菜单 */
+
+.slide.slideout .li:hover .child-menu {
+    margin-left: 1px;
+    position: absolute;
+    display: block;
+    top: 0;
+    background-color: #30363e;
+    border-radius: 5px;
+    margin-top: 0;
+    left: 50px;
+}
+
+.slide.slideout .li:hover .child-menu>li>a {
+    /* color: #fff;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: inline-block; */
+    padding: 3px 10px 3px 10px;
+}
+
+.slide.slideout .li:hover .child-menu>li {
+    padding: 5px 15px;
+}
+
+ul.child-menu>li>a {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding: 3px 10px 3px 55px;
+}
+
+.slide.slideout {
+    z-index: 100;
+}
+
+.slidein .child-menu.active {
+    display: block;
+    animation: menus 2s 1 ease forwards;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@keyframes menus {
+    from {
+        max-height: 0;
+        display: none;
+    }
+    to {
+        display: block;
+        max-height: 1000px;
+        height: 100%;
+    }
+}
+
+
+/* 子菜单 */
+
+ul.child-menu>li {
+    list-style: none;
+    margin-left: 0;
+    line-height: 30px;
+    font-size: 15px;
+    /* padding: 3px 10px 3px 55px; */
+    position: relative;
+}
+
+ul.child-menu>li:hover,
+ul.child-menu>li.active {
+    background-color: #22262c;
+    border-radius: 5px;
+}
+
+ul.child-menu>li:hover:after,
+ul.child-menu>li.active:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: #838b96;
+}
+
+.cont {
+    display: block;
+    position: fixed;
+    left: 50px;
+    bottom: 0;
+    border-bottom: 1px solid black;
+    right: 0;
+    background: #fff;
+    top: 50px;
+    font-size: 14px;
+    overflow: auto;
+    /* overflow-y: scroll; */
+    /* margin-right: -10px; */
+    /* overflow-x: scroll; */
+}
+
+.wrap {
+    width: 100%;
+    background: #ddd;
+    min-height: 1000px;
+    font-size: 14px;
+}
+
+.li .text {
+    word-break: keep-all;
+}
+
+.slideout .title-menu .text {
+    display: none;
+}
+
+.child-menu li {
+    word-break: keep-all;
+}
+
+.slideout .child-menu.active {
+    display: none;
+}
+
+.slideout .li:hover .child-menu.active {
+    transition: all 0;
+}
+
+.slideout {
+    /* -webkit-animation: cssAnimation 0.3s 1 ease forwards;
+  animation: cssAnimation 0.3s 1 ease forwards; */
+    transition: all .3s ease;
+    width: 50px;
+}
+
+.slidein {
+    /* -webkit-animation: slide .2s 1 ease forwards;
+  animation: slide .2s 1 ease forwards; */
+    width: 240px;
+    transition: all .2s;
+}
+
+.content-small {
+    /*-webkit-animation: cont 0.3s 1 ease forwards;
+  animation: cont 0.3s 1 ease forwards;
+  */
+    left: 240px;
+    transition: all .3s ease;
+}
+
+@keyframes cont {
+    from {
+        left: 50px;
+    }
+    to {
+        left: 240px;
+    }
+}
+
+
+/*动画区域begin*/
+
+@keyframes cssAnimation {
+    from {
+        width: 240px;
+    }
+    to {
+        width: 50px;
+    }
+}
+
+@keyframes slide {
+    from {
+        width: 50px;
+    }
+    to {
+        width: 240px;
+    }
+}
+
+.content-large {
+    /*-webkit-animation: contin 0.3s 1 ease forwards;
+  animation: contin 0.3s 1 ease forwards;
+  */
+    transition: all .3s ease;
+    left: 50px;
+}
+
+@-webkit-keyframes contin {
+    from {
+        left: 240px;
+    }
+    to {
+        left: 50px;
+    }
+}
+
+@keyframes contin {
+    from {
+        left: 240px;
+    }
+    to {
+        left: 50px;
+    }
+}
+
+
+/*动画区域end*/
+
+
+/* 图标区域 */
+
+#spanicon {
+    color: aliceblue;
+    float: right;
+    margin-top: 5px;
+}
+
+#spanicon input {
+    display: none;
+}
+
+#spanicon label {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px 0 10px 4px;
+    transition: all 0.5s;
+    text-align: left;
+}
+
+#spanicon div,
+#spanicon div:before,
+#spanicon div:after {
+    background-color: #fff;
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+
+#spanicon label div:first-child {
+    top: 0;
+}
+
+#spanicon label div:nth-child(2) {
+    top: 8px;
+}
+
+#spanicon label div:nth-child(3) {
+    top: 16px;
+}
+
+#spanicon #menu36+label div:first-child {
+    transition: top 0.15s 0.15s, transform 0.15s;
+}
+
+#menu36+label div:nth-child(2),
+#menu36+label div:nth-child(3) {
+    transition: top 0.15s 0.15s, transform 0.15s;
+}
+
+#menu36:checked+label div:first-child {
+    top: 10px;
+    transform: rotate(45deg);
+    transition: top 0.15s, transform 0.15s 0.15s;
+}
+
+#menu36:checked+label div:nth-child(2),
+#menu36:checked+label div:nth-child(3) {
+    top: 10px;
+    transform: rotate(-45deg);
+    transition: top 0.15s, transform 0.15s 0.15s;
+}
